@@ -1,0 +1,32 @@
+{
+  "name": "agroguide-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Powered Agriculture Crop Advisory Assistant Monorepo",
+  "scripts": {
+    "dev": "pnpm --parallel --filter agroguide-ai-client --filter agroguide-ai-server dev",
+    "dev:client": "pnpm --filter agroguide-ai-client dev",
+    "dev:server": "pnpm --filter agroguide-ai-server dev",
+    "build": "node scripts/build_vercel.mjs",
+    "build:all": "pnpm --filter agroguide-ai-client build && pnpm --filter agroguide-ai-server build",
+    "build:client": "pnpm --filter agroguide-ai-client build",
+    "build:server": "pnpm --filter agroguide-ai-server build",
+    "vercel-build": "node scripts/build_vercel.mjs",
+    "migrate": "node scripts/run_migration.mjs",
+    "lint": "pnpm --filter agroguide-ai-client lint && pnpm --filter agroguide-ai-server lint"
+  },
+  "keywords": [
+    "agriculture",
+    "gemini-ai",
+    "crop-advisory",
+    "soil-health",
+    "fertilizer",
+    "irrigation",
+    "plant-disease",
+    "supabase",
+    "react",
+    "express"
+  ],
+  "author": "AgroGuide Team",
+  "license": "MIT"
+}
