@@ -17,3 +17,5 @@ app.listen(env.PORT, () => {
   console.log(`🌐 Client Origin: ${env.CLIENT_URL}`);
   console.log(`🧠 AI Engine: ${env.GEMINI_MODEL} (${env.isGeminiConfigured ? 'Live Google GenAI' : 'Agro-Ecological Fallback'})`);
 });
+
+export default app;
